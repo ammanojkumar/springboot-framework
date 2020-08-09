@@ -5,9 +5,9 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.mk.banking</groupId>
-	<artifactId>springboot-microservices-zuul-jwt</artifactId>
+	<artifactId>springboot-micser-zuul-jwt</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>springboot-microservices-zuul-jwt</name>
+	<name>springboot-micser-zuul-jwt</name>
 	<packaging>pom</packaging>
 	<description>Springboot microservices with JWT and Zuul</description>
 
@@ -19,7 +19,7 @@
 	</parent>
 
 	<modules>
-		<module>banking-service</module>
+		<module>mbank-service</module>
 		<module>naming-service</module>
 		<module>jwt-service</module>
 		<module>gateway-service</module>
