@@ -15,6 +15,6 @@ public class AccountController {
 
 	@GetMapping("balance/{accNumber}")
 	public String getAccountBalance(@PathVariable String accNumber) {
-		return "$ 2300";
+		return accountService.getAccountBalance(accNumber);
 	}
 }

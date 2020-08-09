@@ -1,0 +1,48 @@
+{
+	"variables": [],
+	"info": {
+		"name": "JWT",
+		"_postman_id": "c2eb016b-de94-9ca2-09b6-aaeddca36ae0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01 authenticate",
+			"request": {
+				"url": "localhost:8080/authenticate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\":\"aaa\",\"password\":\"password\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "02 marks",
+			"request": {
+				"url": "http://localhost:8080/marks/2",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhYWEiLCJleHAiOjE1OTY5OTg5NjAsImlhdCI6MTU5Njk5NTM2MH0.Li0iJ8q312HHw9rgw_JMIppPxBAG4J_nHu-AH2xH_iJ7zZx1txnPUbbGtl9h9Wvw524RVMkM80FuGbcTjWwobA",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

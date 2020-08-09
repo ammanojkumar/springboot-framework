@@ -4,23 +4,55 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<parent>
-		<groupId>io.mk.banking</groupId>
-		<artifactId>springboot-micser-zuul-jwt</artifactId>
-		<version>1.0.0-SNAPSHOT</version>
-	</parent>
+	<!-- <parent> -->
+	<!-- <groupId>io.mk.banking</groupId> -->
+	<!-- <artifactId>springboot-micser-zuul-jwt</artifactId> -->
+	<!-- <version>1.0.0-SNAPSHOT</version> -->
+	<!-- </parent> -->
 
 	<groupId>io.mk.jwt</groupId>
 	<artifactId>jwt-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>jwt-service</name>
+
+	<properties>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+	</properties>
 	<description>JWT service</description>
 
 	<dependencies>
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.cloud</groupId> -->
+		<!-- <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId> -->
+		<!-- </dependency> -->
+
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-security -->
 		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-security</artifactId>
+			<version>2.3.2.RELEASE</version>
 		</dependency>
+
+
+		<dependency>
+			<groupId>io.jsonwebtoken</groupId>
+			<artifactId>jjwt</artifactId>
+			<version>0.9.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api -->
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>2.3.0</version>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.springframework.security</groupId> -->
+		<!-- <artifactId>spring-security-test</artifactId> -->
+		<!-- <scope>test</scope> -->
+		<!-- </dependency> -->
 	</dependencies>
 
 	<build>
