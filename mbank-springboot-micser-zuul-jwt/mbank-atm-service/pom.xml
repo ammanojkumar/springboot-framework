@@ -6,7 +6,7 @@
 
 	<parent>
 		<groupId>io.mk.banking</groupId>
-		<artifactId>springboot-micser-zuul-jwt</artifactId>
+		<artifactId>mbank-springboot-micser-zuul-jwt</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
@@ -33,11 +33,11 @@
 			<version>${spring-cloud.starter.version}</version>
 		</dependency>
 
-<!-- 		<dependency> -->
-<!-- 			<groupId>io.mk.jwt</groupId> -->
-<!-- 			<artifactId>jwt-service</artifactId> -->
-<!-- 			<version>0.0.1-SNAPSHOT</version> -->
-<!-- 		</dependency> -->
+		<dependency>
+			<groupId>io.mk.jwt</groupId>
+			<artifactId>mbank-jwt-service</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
 
 	<build>
