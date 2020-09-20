@@ -1,0 +1,22 @@
+{
+	"variables": [],
+	"info": {
+		"name": "cloud-config",
+		"_postman_id": "bbdaf3de-e687-89ec-a4c0-8007d2de04a7",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8888/spring-cloud-config-client/default",
+			"request": {
+				"url": "http://localhost:8888/spring-cloud-config-client/default",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
