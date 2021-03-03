@@ -1,0 +1,84 @@
+{
+	"variables": [],
+	"info": {
+		"name": "POS",
+		"_postman_id": "8315bf07-35fa-6963-f0e3-380dec49f953",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/item",
+			"request": {
+				"url": "localhost:8080/item",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"pen\",\n\t\"price\":\"12\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/item/1",
+			"request": {
+				"url": "localhost:8080/item/1",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/item",
+			"request": {
+				"url": "localhost:8080/item",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"itemId\":\"4\",\n\t\"name\":\"pen\",\n\t\"price\":\"15\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/item/1",
+			"request": {
+				"url": "localhost:8080/item/1",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/items",
+			"request": {
+				"url": "localhost:8080/items",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
