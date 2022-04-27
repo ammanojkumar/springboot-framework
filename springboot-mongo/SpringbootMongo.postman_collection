@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "01501600-ff6f-4376-95c9-6dd3366d9fbd",
+		"name": "SpringbootMongo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Find all channel",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/channel/findall",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"channel",
+						"findall"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add channel",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Star\",\r\n    \"language\": \"English\",\r\n    \"type\": \"Entertinement\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/channel/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"channel",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
