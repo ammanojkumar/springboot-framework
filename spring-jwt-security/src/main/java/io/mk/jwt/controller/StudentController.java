@@ -9,6 +9,6 @@ public class StudentController {
 
 	@RequestMapping("marks/{stuId}")
 	public Integer getMarks(@PathVariable Integer stuId) {
-		return 99;
+		return 97;
 	}
 }

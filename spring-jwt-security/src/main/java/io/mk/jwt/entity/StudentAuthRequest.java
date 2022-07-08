@@ -1,15 +1,15 @@
-package io.mk.jwt.model;
+package io.mk.jwt.entity;
 
 import java.io.Serializable;
 
-public class StudentRequest implements Serializable {
+public class StudentAuthRequest implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	private String username;
 	private String password;
 
-	public StudentRequest(String username, String password) {
+	public StudentAuthRequest(String username, String password) {
 		super();
 		this.username = username;
 		this.password = password;
