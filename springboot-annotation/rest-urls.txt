@@ -1,0 +1,14 @@
+@Lookup
+http://localhost:8080/print
+
+@Configuration 
+http://localhost:8080/greetme
+
+@Qualifier
+http://localhost:8080/animal
+
+@Profile
+http://localhost:8080/profile
+
+@Properties
+http://localhost:8080/value

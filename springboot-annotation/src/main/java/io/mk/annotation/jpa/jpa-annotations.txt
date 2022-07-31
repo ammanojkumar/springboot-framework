@@ -1,0 +1,11 @@
+@Entity
+@Table
+@Column
+@Transctional
+@Id
+@GeneratedValue
+
+@OneToOne
+@OneToMany
+@ManyToOne
+@ManyToMany

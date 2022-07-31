@@ -1,0 +1,5 @@
+@Component
+@Service
+@Controller
+@RestController
+@Repository
