@@ -12,10 +12,10 @@
 	</parent>
 
 	<groupId>io.mk.jwt</groupId>
-	<artifactId>spring-jwt-security</artifactId>
+	<artifactId>springboot-jwt-security</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-jwt-security</name>
-	<description>spring-jwt-security</description>
+	<name>springboot-jwt-security</name>
+	<description>Spring boot jwt security</description>
 
 	<properties>
 		<java.version>11</java.version>

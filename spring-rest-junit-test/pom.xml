@@ -18,13 +18,13 @@
 	</developers>
 	
 	<groupId>io.mk</groupId>
-	<artifactId>spring-rest-junit-test</artifactId>
+	<artifactId>springboot-junit-test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>spring-rest-junit-test</name>
-	<description>Spring rest service junit test cases</description>
+	<name>springboot-junit-test</name>
+	<description>Springboot junit test cases</description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>

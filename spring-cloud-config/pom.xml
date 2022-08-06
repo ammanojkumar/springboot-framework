@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.mk.cloud.config</groupId>
-	<artifactId>spring-cloud-config</artifactId>
+	<artifactId>springboot-cloud-config</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
-	<name>spring-cloud-config</name>
+	<name>springboot-cloud-config</name>
 	<packaging>pom</packaging>
-	<description>spring-cloud-config</description>
+	<description>Springboot cloud config</description>
 
 	<parent>
 		<groupId>io.mk.spring</groupId>
@@ -28,17 +28,5 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 	</dependencies>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<version>${spring-cloud.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
 
 </project>
