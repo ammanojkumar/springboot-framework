@@ -1,4 +1,4 @@
-package io.mk.spmongo.controller;
+package io.mk.mongo.controller;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.mk.spmongo.model.TVChannel;
-import io.mk.spmongo.repo.TVRepo;
+import io.mk.mongo.model.TVChannel;
+import io.mk.mongo.repo.TVRepo;
 
 @RestController
 @RequestMapping(value = "channel")

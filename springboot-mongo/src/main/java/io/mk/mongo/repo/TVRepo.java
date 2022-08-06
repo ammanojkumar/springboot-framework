@@ -1,8 +1,8 @@
-package io.mk.spmongo.repo;
+package io.mk.mongo.repo;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-import io.mk.spmongo.model.TVChannel;
+import io.mk.mongo.model.TVChannel;
 
 public interface TVRepo extends MongoRepository<TVChannel, Integer>{
 

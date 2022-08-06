@@ -51,7 +51,7 @@ public class CustomEndpoint {
 	 * {"id":"20220101", "status":"up", "detail":"running"}
 	 */
 	@WriteOperation
-	public void configureFeature(String id, String status, String detail) {
+	public void configureStatus(String id, String status, String detail) {
 		System.out.println("Creating new status " + id);
 		statusMap.put(id, new StatusHistory(id, status, detail));
 	}
@@ -60,7 +60,7 @@ public class CustomEndpoint {
 	 * DELETE http://localhost:8080/actuator/appStatus/20220101
 	 */
 	@DeleteOperation
-	public void deleteFeature(@Selector String name) {
+	public void deleteStatus(@Selector String name) {
 		statusMap.remove(name);
 	}
 

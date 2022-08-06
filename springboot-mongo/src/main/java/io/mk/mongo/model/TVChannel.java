@@ -1,4 +1,4 @@
-package io.mk.spmongo.model;
+package io.mk.mongo.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
