@@ -1,0 +1,7 @@
+kafka-server-start.bat D:\Manoj\Workspace\Server\kafka\config\server.properties
+zookeeper-server-start.bat D:\Manoj\Workspace\Server\kafka\config\zookeeper.properties
+
+kafka-topics.bat --create --topic first-topic --bootstrap-server localhost:9092
+
+kafka-console-producer.bat --topic first-topic --bootstrap-server localhost:9092
+kafka-console-consumer.bat --topic first-topic --from-beginning --bootstrap-server localhost:9092
