@@ -12,10 +12,10 @@
 	</parent>
 
 	<groupId>io.mk.h2</groupId>
-	<artifactId>springboot-h2-database</artifactId>
+	<artifactId>springboot-h2-ui</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-h2-database</name>
-	<description>Springboot h2 database tutorials</description>
+	<name>springboot-h2-ui</name>
+	<description>Springboot h2 database CRUD with UI</description>
 
 	<properties>
 		<java.version>11</java.version>

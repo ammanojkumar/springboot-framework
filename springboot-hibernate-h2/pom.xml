@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>io.mk.orm</groupId>
-	<artifactId>springboot-hibernate-h2</artifactId>
+	<artifactId>springboot-h2-crud</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-hibernate-h2</name>
-	<description>Springboot hibernate h2 demo</description>
+	<name>springboot-h2-crud</name>
+	<description>Springboot H2 database CRUD demo</description>
 
 	<properties>
 		<java.version>8</java.version>

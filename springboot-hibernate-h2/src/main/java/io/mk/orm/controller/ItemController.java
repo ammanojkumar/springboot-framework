@@ -1,7 +1,6 @@
 package io.mk.orm.controller;
 
 import java.util.List;
-import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,51 +14,40 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.mk.orm.model.Item;
-import io.mk.orm.repostory.ItemRepository;
+import io.mk.orm.service.ItemService;
 
 @RestController
 public class ItemController {
 
 	@Autowired
-	private ItemRepository itemRepo;
+	private ItemService itemService;
 
 	@PostMapping("item")
 	public ResponseEntity<Item> saveItem(@RequestBody Item item) {
-		return new ResponseEntity<>(itemRepo.save(item), HttpStatus.CREATED);
+		return new ResponseEntity<>(itemService.saveItem(item), HttpStatus.CREATED);
 	}
 
-	@PutMapping("item")
+	@PutMapping("updateitem")
 	public ResponseEntity<Item> updateItem(@RequestBody Item item) {
-		return new ResponseEntity<>(itemRepo.save(item), HttpStatus.OK);
+		Item itemResp = itemService.updateItem(item);
+		return new ResponseEntity<>(itemResp, HttpStatus.CREATED);
 	}
 
 	@GetMapping("item/{id}")
-	public ResponseEntity<Item> getItem(@PathVariable String id) {
-		Optional<Item> item = itemRepo.findById(id);
-
-		if (item.isPresent()) {
-			return new ResponseEntity<>(item.get(), HttpStatus.OK);
-		}
-		return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+	public ResponseEntity<Item> getItem(@PathVariable Integer id) {
+		Item item = itemService.getItem(id);
+		return new ResponseEntity<>(item, HttpStatus.NOT_FOUND);
 	}
 
 	@GetMapping("items")
 	public ResponseEntity<List<Item>> getAllItems() {
-		List<Item> list = itemRepo.findAll();
-
-		if (list.isEmpty() || list.size() == 0) {
-			return new ResponseEntity<>(HttpStatus.NO_CONTENT);
-		}
-
+		List<Item> list = itemService.getAllItems();
 		return new ResponseEntity<>(list, HttpStatus.OK);
 	}
 
 	@DeleteMapping("item/{id}")
-	public ResponseEntity<HttpStatus> deleteItem(@PathVariable String id) {
-		Optional<Item> item = itemRepo.findById(id);
-		if (item.isPresent()) {
-			itemRepo.delete(item.get());
-		}
+	public ResponseEntity<HttpStatus> deleteItem(@PathVariable Integer id) {
+		itemService.deleteItem(id);
 		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
 	}
 }

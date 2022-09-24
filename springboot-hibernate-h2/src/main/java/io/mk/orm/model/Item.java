@@ -16,17 +16,17 @@ public class Item {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private String itemId;
+	private Integer itemId;
 	private String name;
 	private int price;
 	@CreationTimestamp
 	private Date createdAt;
 
-	public String getItemId() {
+	public Integer getItemId() {
 		return itemId;
 	}
 
-	public void setItemId(String itemId) {
+	public void setItemId(Integer itemId) {
 		this.itemId = itemId;
 	}
 
