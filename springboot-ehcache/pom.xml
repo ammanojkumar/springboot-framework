@@ -10,34 +10,32 @@
 		<version>1.0.0</version>
 	</parent>
 
-	<groupId>io.mk</groupId>
-	<artifactId>springboot-junit-test</artifactId>
+	<groupId>io.mk.cache</groupId>
+	<artifactId>springboot-ehcache</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-junit-test</name>
-	<description>Springboot junit test cases</description>
-
-	<properties>
-		<java.version>11</java.version>
-	</properties>
+	<name>springboot-ehcache</name>
+	<description>Springboot Ehcache demo</description>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-cache</artifactId>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
+			<groupId>org.ehcache</groupId>
+			<artifactId>ehcache</artifactId>
 		</dependency>
 
 		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
+			<groupId>javax.cache</groupId>
+			<artifactId>cache-api</artifactId>
 		</dependency>
-
 	</dependencies>
 
 	<build>

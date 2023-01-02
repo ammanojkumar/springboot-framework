@@ -14,7 +14,7 @@
 	<artifactId>springboot-transaction-management</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springboot-transaction-management</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Springboot transaction management</description>
 
 	<dependencies>
 		<dependency>
