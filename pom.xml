@@ -39,16 +39,19 @@
 	<modules>
 		<module>springboot-actuator</module>
 		<module>springboot-annotation</module>
-		<module>mbank-springboot-micser-zuul-jwt</module>
-		<module>spring-cloud-config</module>
-		<module>spring-jwt-security</module>
-		<module>spring-rest-junit-test</module>
 		<module>springboot-aop-logging</module>
+		<module>springboot-batch</module>
+		<module>springboot-cloud-config</module>-
 		<module>springboot-ehcache-demo</module>
 		<module>springboot-h2-database</module>
 		<module>springboot-hibernate-h2</module>
+		<module>springboot-jwt-security</module>
+		<module>springboot-kafka</module>
 		<module>springboot-mongo</module>
 		<module>springboot-oauth2client-github</module>
+		<module>springboot-rest-junit-test</module>
+		<module>springboot-scheduler</module>
+		<module>springboot-security</module>
 		<module>springboot-swagger-tutorial</module>
 		<module>springboot-transaction-management</module>
 	</modules>
