@@ -12,7 +12,7 @@
 	<groupId>io.mk.annotation</groupId>
 	<artifactId>springboot-annotation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-lookup</name>
+	<name>springboot-annotation</name>
 	<description>springboot annotations</description>
 
 	<dependencies>
