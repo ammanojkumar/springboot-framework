@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns="http://maven.apache.org/POM/4.0.0"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
+         xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-	<groupId>io.mk.cloud.config</groupId>
-	<artifactId>springboot-cloud-config</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
-	<name>springboot-cloud-config</name>
-	<packaging>pom</packaging>
-	<description>Springboot cloud config</description>
+    <parent>
+        <groupId>io.mk.springboot</groupId>
+        <artifactId>springboot2-tutorials-parent</artifactId>
+        <version>2.7</version>
+    </parent>
 
-	<parent>
-		<groupId>io.mk.spring</groupId>
-		<artifactId>springboot-tutorials-parent</artifactId>
-		<version>1.0.0</version>
-	</parent>
+    <groupId>io.mk.cloud.config</groupId>
+    <artifactId>springboot-cloud-config</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <name>springboot-cloud-config</name>
+    <packaging>pom</packaging>
+    <description>Springboot cloud config</description>
 
-	<modules>
-		<module>spring-cloud-config-client</module>
-		<module>spring-cloud-config-server</module>
-	</modules>
+    <modules>
+        <module>spring-cloud-config-client</module>
+        <module>spring-cloud-config-server</module>
+    </modules>
 
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+    </dependencies>
 
 </project>

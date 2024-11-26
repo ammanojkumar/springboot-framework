@@ -11,12 +11,6 @@
  		<relativePath />
  	</parent>
 
-<!--	<parent>-->
-<!--		<groupId>io.mk.spring</groupId>-->
-<!--		<artifactId>springboot-tutorials-parent</artifactId>-->
-<!--		<version>1.0.0</version>-->
-<!--	</parent>-->
-
 	<groupId>io.mk.h2</groupId>
 	<artifactId>springboot-h2-ui</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
